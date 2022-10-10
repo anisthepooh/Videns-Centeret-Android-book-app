@@ -18,8 +18,9 @@ public class PDFViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdfview);
 
+        // Initialisation of the PDF viewer.
         PDFView pdfView = findViewById(R.id.pdfView);
-
+        // Defines where the view should get the file from and adds different methods
         pdfView.fromAsset("lean-haandbog.pdf")
                 .pageFitPolicy(FitPolicy.BOTH)
                 .pageSnap(true)

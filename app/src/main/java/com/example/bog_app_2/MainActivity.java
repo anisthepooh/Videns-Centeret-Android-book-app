@@ -14,10 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //The setup of the button that switch activities
         Button button = (Button) findViewById(R.id.button);
-
-
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // openActivity purpose is to start the activity "PDFViewActivity" when the button is pressed.
     public void openActivity() {
         Intent intent = new Intent(this, PDFViewActivity.class);
         startActivity(intent);
